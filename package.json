@@ -2,7 +2,7 @@
   "name": "create-next-example-app",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "cross-env NODE_OPTIONS=\"--openssl-legacy-provider --inspect\" next build",
     "start": "next start",
     "format": "prettier --write {pages,components}/**/*.{js,jsx}"
   },
