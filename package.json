@@ -1,8 +1,11 @@
 {
+  "engines": {
+    "node": "16.x"
+  },
   "name": "create-next-example-app",
   "scripts": {
     "dev": "next",
-    "build": "cross-env NODE_OPTIONS=\"--openssl-legacy-provider --inspect\" next build",
+    "build": "next build",
     "start": "next start",
     "format": "prettier --write {pages,components}/**/*.{js,jsx}"
   },
@@ -12,7 +15,9 @@
     "@material-ui/lab": "^4.0.0-alpha.57",
     "next": "^10.0.4",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.93.0"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
